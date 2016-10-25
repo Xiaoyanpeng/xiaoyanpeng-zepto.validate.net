@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>验证</title>
+        <style>
+            .has-success{
+                color:green;
+            }
+            .has-success input{
+                border:solid 1px green;
+            }
+            .has-error{
+                color:red;
+            }
+            .has-error input{
+                border:solid 1px red;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="" id="form">
+            <div class="verify-group">
+                <label for="">姓名</label>
+                <input type="text" class="need-verify" datatype='t' errormsg='笨呀' nullmsg='请填啦'>
+                <div class="valid-tip"></div>
+            </div>
+            <div>
+                <label for="">性别</label>
+                <input type="radio" name="sex" >男
+                <input type="radio" name="sex" >女
+            </div>
+            <div>
+                <label for="">年龄</label>
+                <input type="text" >
+            </div>
+            <div>
+                <label for="">身份证</label>
+                <input type="text" >
+            </div>
+            <div>
+                <label for="">邮箱</label>
+                <input type="text" >
+            </div>
+            <div>
+                <label for="">电话号码</label>
+                <input type="text" >
+            </div>
+            <div id="sub">提交</div>
+        </form>
+        <script src="js/zepto.min.js"></script>
+        <script src="js/zepto.validate.js"></script>
+    </body>
+</html>
